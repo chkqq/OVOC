@@ -1,13 +1,10 @@
-version: '3'
 services:
-  app1:
+  game-1:
     build: .
     ports:
-      - "3000:3000"
-    container_name: app_2048_1
+      - "8084:8080"
 
-  app2:
+  game-2:
     build: .
     ports:
-      - "3001:3000"
-    container_name: app_2048_2
+      - "8085:8080"
